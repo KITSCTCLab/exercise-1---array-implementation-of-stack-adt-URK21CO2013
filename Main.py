@@ -1,29 +1,32 @@
 import os
 class Stack:
     def _init_(self, size):
-        self.items = [] ;
+        self.items = []
         self.size = size
-        self.indx=-1
+        self.top = -1
 
     def is_empty(self):
-        if stack.indx == -1:
+        if (stack.top == -1):
             return True
-        return False
+        else:
+            return False
 
     def is_full(self):
-        if stack.indx== stack.size-1 :
+        if (stack.top == stack.size -1 ):
             return True
-        return False
+        else:
+            return False
 
     def push(self, data):
         if not self.is_full():
-            stack.items.append(data)
-            stack.indx=stack.indx+1
+           stack.top += 1
+        stack.items.append(data)
 
     def pop(self):
         if not self.is_empty():
-            stack.items.pop()
-            stack.indx=stack.indx-1
+            x = stack.items.pop()
+            stack.top -= 1
+            return x
 
     def status(self):
         for i in range(0, len(stack.items)):
