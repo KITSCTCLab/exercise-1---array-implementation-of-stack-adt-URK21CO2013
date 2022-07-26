@@ -20,7 +20,7 @@ class Stack:
     def push(self, data):
         if not self.is_full():
            stack.top += 1
-        stack.items.append(data)
+           stack.items.append(data)
 
     def pop(self):
         if not self.is_empty():
