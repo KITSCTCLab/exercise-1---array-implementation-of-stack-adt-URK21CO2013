@@ -1,6 +1,7 @@
 import os
+
 class Stack:
-    def _init_(self, size):
+    def __init__(self, size):
         self.items = []
         self.size = size
         self.top = -1
@@ -31,8 +32,8 @@ class Stack:
     def status(self):
         for i in range(0, len(stack.items)):
              print(stack.items[i],end="\n")
-        
 
+       
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
